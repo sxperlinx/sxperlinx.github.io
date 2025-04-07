@@ -3,29 +3,17 @@ import { Metadata } from 'next';
 import Env from '@config/env';
 
 export default class Meta {
-	static readonly title = 'Next-Boilerplate';
+	static readonly title = 'sxperlinx';
 
 	static readonly app: AppData = {
 		name: Meta.title,
 		lang: 'en',
 		metadataBase: new URL(Env.baseUrl),
-		description: 'Next boilerplate template',
+		description: 'sxperlinx website',
 		pages: {
 			home: {
 				url: '/',
 				title: `Home | ${Meta.title}`,
-			},
-			about: {
-				url: '/about',
-				title: 'About',
-			},
-			contact: {
-				url: '/contact',
-				title: 'Contact',
-			},
-			api: {
-				url: '/api',
-				title: 'API',
 			},
 		},
 	};
@@ -62,9 +50,9 @@ export default class Meta {
 	};
 
 	public static readonly manifest: Manifest = {
-		name: 'Next-Boilerplate',
-		short_name: 'Boilerplate',
-		description: 'Next boilerplate',
+		name: 'sxperlinx',
+		short_name: 'sxperlinx',
+		description: 'sxperlinx website',
 		start_url: '/',
 		display: 'standalone',
 		background_color: '#ffffff',

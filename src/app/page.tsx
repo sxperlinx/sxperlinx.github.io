@@ -8,7 +8,7 @@ export const metadata = {
 export default function Home(): Element {
 	return (
 		<main>
-			<h1>{Meta.app.name || 'Next-Boilerplate'}</h1>
+			<h1>{Meta.app.name || 'sxperlinx'}</h1>
 
 			<p>{Meta.app.description}</p>
 		</main>
