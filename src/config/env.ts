@@ -6,6 +6,6 @@ export default class Env {
 	public static readonly isProd = this.nodeEnv === 'production';
 	public static readonly baseUrl = this.isDev
 		? 'http://localhost:3000'
-		: process.env.NEXT_PUBLIC_BASE_URL!;
+		: 'https://sxperlinx.github.io';
 	// Add more environment variables here.
 }

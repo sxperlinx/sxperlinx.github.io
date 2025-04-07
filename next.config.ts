@@ -7,8 +7,6 @@ export default (phase: unknown): NextConfig => {
 	const isDev = phase === PHASE_DEVELOPMENT_SERVER;
 
 	const nextConfig: NextConfig = {
-		assetPrefix: isDev ? undefined : 'https://cdn.example.com',
-		allowedDevOrigins: ['http://localhost:3000'],
 		logging: isDev
 			? {
 					fetches: {
@@ -20,11 +18,6 @@ export default (phase: unknown): NextConfig => {
 			: false,
 		devIndicators: false,
 		distDir: 'dist',
-		pageExtensions: ['tsx'],
-
-		experimental: {
-			cssChunking: true,
-		},
 	};
 	return nextConfig;
 };
